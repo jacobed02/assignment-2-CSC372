@@ -244,11 +244,160 @@ img {
   color: white;
 }
 
+.event-hero {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.event-intro h2 {
+  margin: 0 0 15px;
+  font-size: 42px;
+}
+
+.event-intro img {
+  border: 3px solid #1a3557;
+  min-height: 260px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.event-meta-box {
+  background: #edf4f8;
+  border: 2px solid #1a3557;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.event-meta-box p {
+  margin: 0 0 8px;
+}
+
+.event-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.main-content {
+  background: white;
+  border: 2px solid #1a3557;
+  padding: 20px;
+}
+
+.content-block {
+  margin-bottom: 20px;
+}
+
+.content-block h3,
+.sidebar h3,
+.related-events h3 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.content-block ul,
+.sidebar-list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.schedule-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.schedule-list li {
+  margin-bottom: 8px;
+}
+
+.sidebar {
+  background: #edf4f8;
+  border: 2px solid #1a3557;
+  padding: 20px;
+  height: fit-content;
+}
+
+.sidebar-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar-list li {
+  margin-bottom: 10px;
+}
+
+.register-btn {
+  display: inline-block;
+  background: #5bb3c8;
+  color: #12263f;
+  text-decoration: none;
+  border: 2px solid #12263f;
+  padding: 12px 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.related-events {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.related-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.mini-card {
+  flex: 1 1 200px;
+  background: white;
+  border: 2px solid #1a3557;
+  padding: 12px;
+  min-height: 120px;
+}
+
+.mini-card h4 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.mini-card p {
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .header-inner {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .brand-box {
+    margin-bottom: 10px;
+  }
+
+  .hero-grid,
+  .about-grid,
+  .event-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .event-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .event-card.wide {
+    grid-column: auto;
+  }
+}
+
 @media (max-width: 700px) {
   .header-inner,
   .hero-grid,
   .about-grid,
-  .footer-grid {
+  .footer-grid,
+  .event-layout {
     display: block;
   }
 
@@ -270,5 +419,9 @@ img {
 
   .event-card.wide {
     grid-column: auto;
+  }
+
+  .sidebar {
+    margin-top: 20px;
   }
 }
