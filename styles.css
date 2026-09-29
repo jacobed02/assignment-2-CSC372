@@ -152,6 +152,11 @@ img {
   border: 2px solid #1a3557;
 }
 
+.event-card.saved {
+  background: #e8f7f8;
+  border-color: #287f8d;
+}
+
 .event-card.wide {
   grid-column: span 2;
 }
@@ -194,6 +199,47 @@ img {
   padding: 7px 10px;
   border: 1px solid black;
   font-weight: bold;
+}
+
+.save-event-button {
+  display: inline-block;
+  background: #5bb3c8;
+  color: #12263f;
+  border: 1px solid #12263f;
+  padding: 7px 10px;
+  margin: 8px 0 0 6px;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.saved-events-section {
+  padding: 20px 0;
+  background: #dfe7ec;
+}
+
+.saved-events-heading {
+  margin: 0 0 12px;
+  font-size: 28px;
+}
+
+.saved-events-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.saved-events-list li {
+  margin-bottom: 10px;
+}
+
+.saved-event-name {
+  margin: 0 0 4px;
+  font-size: 18px;
+}
+
+.saved-event-details,
+.saved-events-empty {
+  margin: 0;
 }
 
 .about {
